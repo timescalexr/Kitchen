@@ -20,7 +20,6 @@ import com.mutfakapp.xmutfak.service.UserService;
 public class UserRegistrationController {
 
     @Autowired
-    @Qualifier("uservice")
     private UserService userService;
 
     @ModelAttribute("user")

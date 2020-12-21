@@ -17,7 +17,7 @@ import com.mutfakapp.xmutfak.entity.User;
 import com.mutfakapp.xmutfak.repository.UserRepository;
 import com.mutfakapp.xmutfak.controller.UserRegistrationDto;
 
-@Service("uservicce")
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired

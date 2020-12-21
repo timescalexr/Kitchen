@@ -1,7 +1,6 @@
 package com.mutfakapp.xmutfak.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -19,7 +18,6 @@ import com.mutfakapp.xmutfak.service.UserService;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    @Qualifier("uservice")
     private UserService userService;
 
     @Override
