@@ -13,6 +13,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
+@EnableWebSecurity
 @EnableWebMvc
 @ComponentScan(basePackages = {"com.mutfakapp.xmutfak"})
 @Import({ WebSecurityConfig.class })
