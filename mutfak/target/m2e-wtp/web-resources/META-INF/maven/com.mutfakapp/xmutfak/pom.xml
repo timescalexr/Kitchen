@@ -101,7 +101,7 @@
 		<dependency>
 		    <groupId>org.springframework.data</groupId>
 		    <artifactId>spring-data-jpa</artifactId>
-		    <version>2.2.6.RELEASE</version>
+		    <version>2.4.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
         <dependency>
@@ -109,7 +109,7 @@
            <artifactId>commons-beanutils</artifactId>
             <version>1.9.3</version>
        </dependency>				
-		<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+	   <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
 		<dependency>
 		    <groupId>javax.validation</groupId>
 		    <artifactId>validation-api</artifactId>
