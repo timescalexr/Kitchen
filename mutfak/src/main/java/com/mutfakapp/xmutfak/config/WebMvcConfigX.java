@@ -15,13 +15,13 @@ import org.springframework.web.servlet.view.JstlView;
 //@EnableWebSecurity
 @EnableWebMvc
 @ComponentScan(basePackages = {"com.mutfakapp.xmutfak"})
-@Import({ WebSecurityConfig.class })
+//@Import({ WebSecurityConfig.class })
 public class WebMvcConfigX implements WebMvcConfigurer {
 
-	/*@Override
+	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/").setViewName("home");
-	}*/	
+	}	
 	 
 	@Bean
 	public InternalResourceViewResolver XResolver() {

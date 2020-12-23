@@ -15,7 +15,7 @@ import com.mutfakapp.xmutfak.service.ReceiptService;
 
 
 @Controller
-@RequestMapping(value = "/")
+//@RequestMapping(value = "/")
 public class MainController {
 	
 	@Autowired
