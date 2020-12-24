@@ -18,11 +18,13 @@ public class AppInitializerX implements WebApplicationInitializer {
   public void onStartup(ServletContext sc) throws ServletException {
     AnnotationConfigWebApplicationContext root = new AnnotationConfigWebApplicationContext();
     root.scan("com.mutfakapp");
+    root.setConfigLocation(WebMvcConfigX.class.getName());
  
     sc.addListener(new ContextLoaderListener(root));
     
-    //FilterRegistration.Dynamic securityFilter = sc.addFilter("springSecurityFilterChain", DelegatingFilterProxy.class);
-    //securityFilter.addMappingForUrlPatterns(null, false, "/*");
+    FilterRegistration.Dynamic securityFilter = sc.addFilter("springSecurityFilterChain", DelegatingFilterProxy.class);
+    securityFilter.addMappingForUrlPatterns(null, false, "/*");
+    
     
     AnnotationConfigWebApplicationContext webContext = new AnnotationConfigWebApplicationContext();
     webContext.register(WebMvcConfigX.class);

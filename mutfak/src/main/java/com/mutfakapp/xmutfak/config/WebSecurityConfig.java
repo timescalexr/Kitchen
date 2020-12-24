@@ -15,7 +15,7 @@ import com.mutfakapp.xmutfak.service.UserService;
 
 @EnableWebSecurity
 @Configuration
-//@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
